@@ -1,0 +1,63 @@
+body {
+    line-height: 1.375em;
+    font-style: normal;
+}
+#indexh1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 2em;
+    color: #333;
+     padding-bottom: 2.75em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    border-bottom: 0.1em solid #333;
+   
+
+}
+#indexlogo {
+   
+}
+#index2wagens, #indexlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+    
+}
+body {
+    
+    line-height: 1.375em;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+nav ul {
+    overflow: auto;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+   
+    width: 100%;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+nav li {
+    list-style-type: none;
+   
+    font-style: italic;
+    width: 100%;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-style: italic;
+}
+nav li a:hover {
+    background-color: dimgrey;
+}
