@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <nav id="cssmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="foto's.html">Foto's</a></li>
+                <li><a class="active" href="reservatie.html">Reservatie</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="ophaallocatie.html">Ophaallocatie</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main id="reservatiemain">
+        <form action="mailto:sam.ghesquiere@telenet.be" method="post" enctype="text/plain" id="reservatieform">
+            <p>Voornaam:</p>
+            <input class="inputboxreservatie" type="text">
+            <p>Achternaam:</p>
+            <input class="inputboxreservatie" type="text">
+            <p>Ruwe schatting hoeveel personen (per 10 tal)</p>
+            <input class="inputboxreservatie" type="number">
+            <p>Datum:</p>
+            <input class="inputboxreservatie" type="date">
+            <p>Telefoonnummer:</p>
+            <input class="inputboxreservatie" type="tel">
+            <p>Email:</p>
+            <input class="inputboxreservatie" type="email">
+            <p>Opmerkingen</p>
+            <textarea id="formvraag" name="Mijn gestelde vraag "> </textarea>
+            <input id="formsubmit" type="submit" value="Verstuur" >
+        </form>
+    </main>
+   <footer id="footer">
+     <p>Ilse Rillaert</p>
+    <p>Telefoon: 016401498 </p>
+    </footer>
+</body>
+
+</html>

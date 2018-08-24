@@ -1,63 +1,203 @@
 body {
     line-height: 1.375em;
     font-style: normal;
+    font-weight: 400;
+    background-color: #333;
+    color: white;
+    font-style: italic;
+    overflow: auto;
 }
+
+#footer {
+    text-align: center;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.4em;
+    padding: 0.5em;
+    border: solid white 2px;
+}
+
 #indexh1 {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.25em;
-    font-size: 2em;
-    color: #333;
-     padding-bottom: 2.75em;
+    font-size: 2.2em;
+    padding-bottom: 0.5em;
     margin-left: 2em;
     margin-right: 2em;
-    margin-bottom: 1em;
-    margin-top: 0.5em;
-    border-bottom: 0.1em solid #333;
-   
+    margin-top: 1em;
+    border-bottom: 0.15em solid;
+    border-bottom-color: white;
+    border-bottom-style: double;
+}
 
-}
-#indexlogo {
-   
-}
-#index2wagens, #indexlogo {
+#indexlogo, #indexwagen {
     display: block;
     margin-left: auto;
-    margin-right: auto 
-    
+    margin-right: auto;
+    margin-top: 1em;
+    background-color: #333;
 }
-body {
-    
-    line-height: 1.375em;
-    font-style: normal;
-    font-weight: 400;
-    
+
+#indexwagen{
+   padding-bottom: 0.5em; 
 }
+
+
 nav ul {
     overflow: auto;
-    
     text-align: center;
     display: flex;
     flex-direction: row;
-   
     width: 100%;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 1.5em;
 }
+
 nav li {
     list-style-type: none;
-   
     font-style: italic;
     width: 100%;
 }
 
 nav li a {
+    color: white;
     display: block;
-    color: black;
-    padding: 16px 18px;
+    padding: 0.5em;
     text-decoration: none;
     font-style: italic;
 }
-nav li a:hover {
+
+nav li a:hover,
+.active {
     background-color: dimgrey;
+}
+
+#fotosmain{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+#reservatiemain {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2.4em;
+    line-height: 1.375em;
+    font-style: italic;
+    color: white;
+    width: 60%;
+}
+.inputboxreservatie{
+    margin-bottom: 2em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    text-align: center;
+}
+
+#formvraag {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    
+    
+}
+
+#formsubmit {
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.infoh2 {
+    text-align: center;
+    font-size: 2.3em;
+    letter-spacing: 0.1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 0.8em;
+    margin-top: 2.2em;
+    padding-bottom: 1em;
+    border-bottom: 0.15em solid;
+    border-bottom-color: white;
+    border-bottom-style: double;
+}
+
+#infomain {
+    text-align: center;
+    
+}
+.infotekst{
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+}
+
+#ophaallocatieh1 {
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 2.2em;
+    padding-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    border-bottom: 0.15em solid;
+    border-bottom-color: white;
+    border-bottom-style: double;
+}
+
+#map{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 40em;
+  
+}
+@media screen and (max-width: 1000px ) {
+    nav ul {
+        flex-direction: column;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        height: 13em;;
+        display: flex;
+    }
+    #navindex ul {
+        flex-direction: column;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        position: fixed;
+        top: 0px;
+        height: 13em;
+    }
+    #footer{
+        padding: 4em;
+    }
+    #fotosmain{
+        text-align: center;
+        width: 60%;
+    }
+    #indexwagen{
+    display: none;
+    }
+   
 }

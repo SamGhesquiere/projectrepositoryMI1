@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <nav id="cssmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="foto's.html">Foto's</a></li>
+                <li><a href="reservatie.html">Reservatie</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a class="active" href="ophaallocatie.html">Ophaallocatie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="ophaallocatiemain">
+        <h1 id="ophaallocatieh1">Ophaallocatie wagen:</h1>
+        <div id="map"></div>
+
+        <script>
+            function myMap() {
+                var myLatLng = {
+                    lat: 50.7416,
+                    lng: 4.3361
+                };
+                var mapOptions = {
+                    center: new google.maps.LatLng(50.7416, 4.3361),
+                    zoom: 15,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+
+                });
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCpraUZpgPzPJIK1EZQWS0SQ-x83F7Mgw&callback=myMap"></script>
+    </main>
+    <footer id="footer">
+        <p>Telefoon: 016401498</p>
+        <p>Email: Ilse.Rillaert@pastacafe.be</p>
+    </footer>
+</body>
+
+</html>
