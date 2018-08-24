@@ -32,7 +32,8 @@ body {
     border-bottom-style: double;
 }
 
-#indexlogo, #indexwagen {
+#indexlogo,
+#indexwagen {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -40,8 +41,8 @@ body {
     background-color: #333;
 }
 
-#indexwagen{
-   padding-bottom: 0.5em; 
+#indexwagen {
+    padding-bottom: 0.5em;
 }
 
 
@@ -74,7 +75,7 @@ nav li a:hover,
     background-color: dimgrey;
 }
 
-#fotosmain{
+#fotosmain {
     width: 45%;
     margin-left: auto;
     margin-right: auto;
@@ -91,7 +92,8 @@ nav li a:hover,
     color: white;
     width: 60%;
 }
-.inputboxreservatie{
+
+.inputboxreservatie {
     margin-bottom: 2em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
@@ -117,8 +119,8 @@ input {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-    
-    
+
+
 }
 
 #formsubmit {
@@ -145,9 +147,15 @@ input {
 
 #infomain {
     text-align: center;
-    
+
 }
-.infotekst{
+
+.infotekst {
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+}
+
+.infolijsttekst {
     font-size: 1.4em;
     margin-bottom: 0.2em;
 }
@@ -166,19 +174,21 @@ input {
     border-bottom-style: double;
 }
 
-#map{
+#map {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     height: 40em;
-  
+
 }
-@media screen and (max-width: 1000px ) {
+
+@media screen and (max-width: 1000px) {
     nav ul {
         flex-direction: column;
         font-size: 1.5em;
         line-height: 1.5em;
-        height: 13em;;
+        height: 13em;
+        ;
         display: flex;
     }
     #navindex ul {
@@ -189,15 +199,19 @@ input {
         top: 0px;
         height: 13em;
     }
-    #footer{
-        padding: 4em;
-    }
-    #fotosmain{
+
+    #fotosmain {
         text-align: center;
         width: 60%;
     }
-    #indexwagen{
-    display: none;
+    #indexwagen {
+        display: none;
     }
    
+    #footer {
+        text-align: center;
+        width: 20%;
+
+    }
+
 }
